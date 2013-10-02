@@ -1,5 +1,4 @@
 Learning
 ========
 
-*new*
-Assignments 0 and 1 added
+Task 0 and Task 1 added
