@@ -1,5 +1,0 @@
-Assignment 0:
---------------
-For this assignment, uncomment the line below.  When you are finished, proceed to the next assignment
-
-// I am done.

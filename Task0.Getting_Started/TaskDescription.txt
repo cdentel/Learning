@@ -1,0 +1,23 @@
+Task 0:
+--------------
+For this task, 
+
+1.  Uncomment the line below.  
+
+2.  Create a new file called Quote.txt that has a quote in it that is atleast
+    mildly interesting
+
+3.  Add quote to git.
+
+4.  Commit your change to this file and your newly added file
+
+5.  Push your changes to github
+
+6.  Proceed to the next assignment
+
+For Help with Git, visit http://git-scm.com/book/en/Getting-Started-Git-Basics
+
+AND if your answer is not their - ping me on Facebook
+
+--------------------------------------------------------------------------------
+// I am done.

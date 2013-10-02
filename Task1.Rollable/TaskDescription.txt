@@ -1,6 +1,6 @@
-Assignment 1:
+Task 1:
 --------------
-For this first assignment, 
+For this first task, 
 
 1.  Create a class Die which implements Rollable.
 
