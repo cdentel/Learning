@@ -1,0 +1,29 @@
+Assignment 1:
+--------------
+For this first assignment, 
+
+1.  Create a class Die which implements Rollable.
+
+    Commit your result.
+
+2.  Create a class called CheatingDie which will never roll its 
+    lowest value but rolls its highest value twice as frequently.
+
+    It's okay if you change Die during this step
+
+    Commit your result and push.
+
+3.  Implement verify in RollableInspector.
+
+    Commit your result.
+
+4.  Create a class called ShadiesTrickyDie which implements Rollable and
+    with which RollableInspector.isProbablyWeighted(aTrickyDie, 100000, 0.10) 
+    will ALWAYS return false but isProbablyWeighted(aTrickyDie, 100000, 0.09) 
+    willi always return true.  Try to get your die as close to 0.10.
+
+    BONUS: The die is non-deterministic (ie, the value it favors is not always
+    the same (maybe it can be specified?), and the sequence of rolls is not
+    always the same.
+
+    Commit your result and push.

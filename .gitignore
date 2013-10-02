@@ -1,0 +1,7 @@
+# This is a .gitignore file - it tells git to ignore files which match the 
+# patterns listed.  This is used to prevent things that are not source code
+# from being committed to the repository - like the .class files that Java
+# generates.  The following rule does just that - it ignores any file that
+# matches *.class (* is of ten used to mean anything).
+
+*.class
