@@ -20,4 +20,4 @@ For Help with Git, visit http://git-scm.com/book/en/Getting-Started-Git-Basics
 AND if your answer is not their - ping me on Facebook
 
 --------------------------------------------------------------------------------
-// I am done.
+I am done.
