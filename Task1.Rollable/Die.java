@@ -1,9 +1,21 @@
 import java.util.*;
+import java.io.*;
 
 public class Die implements Rollable {
 	
-	private int sides = 6; // default sides
-	private int lastRoll = 0;
+	private int sides; 
+	private int lastRoll;
+	private Random r;
+	
+	public Die() {
+		do {
+			Scanner console = new Scanner(System.in);
+			System.out.print("How many sides are on this die ( > 1)? ");
+			sides = console.nextInt();
+		} while (sides < 1);
+		r = new Random();
+		roll();
+	}
 	
 	
 	public int sides() {
@@ -15,7 +27,6 @@ public class Die implements Rollable {
 	}
 	
 	public void roll() {
-		Random r = new Random();
 		lastRoll = r.nextInt(sides) + 1;
 	}
 	
