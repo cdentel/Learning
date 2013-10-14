@@ -8,11 +8,13 @@ public class Die implements Rollable {
 	private Random r;
 	
 	public Die() {
-		do {
-			Scanner console = new Scanner(System.in);
-			System.out.print("How many sides are on this die ( > 1)? ");
-			sides = console.nextInt();
-		} while (sides < 1);
+		this.sides = 0;
+		r = new Random();
+		roll();
+	}
+	
+	public Die(int sides) {
+		this.sides = sides;
 		r = new Random();
 		roll();
 	}
