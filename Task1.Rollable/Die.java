@@ -8,7 +8,7 @@ public class Die implements Rollable {
 	private Random r;
 	
 	public Die() {
-		this.sides = 0;
+		this.sides = 6;
 		r = new Random();
 		roll();
 	}
