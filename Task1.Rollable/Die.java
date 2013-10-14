@@ -35,5 +35,9 @@ public class Die implements Rollable {
 	public int lastRoll() {
 		return lastRoll();
 	}
+	
+	public void setLastRoll(int newValue) {
+		lastRoll = newValue;
+	}
 
 }
