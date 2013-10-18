@@ -3,8 +3,8 @@ import java.io.*;
 
 public class Die implements Rollable {
 	
-	private int sides; 
-	private int lastRoll;
+	protected int sides; 
+	protected int lastRoll;
 	private Random r;
 	
 	public Die() {
@@ -34,10 +34,6 @@ public class Die implements Rollable {
 	
 	public int lastRoll() {
 		return lastRoll();
-	}
-	
-	public void setLastRoll(int newValue) {
-		lastRoll = newValue;
 	}
 
 }
