@@ -33,11 +33,26 @@ public class RollableInspector {
    *        respectively.  The greatest disparity is that between sides 1 and 
    *        sides 2 or 3 at 0.25 (0.50 - 0.25)
    */
-  public static double computeDeviation(
-      Rollable rollabe,
-      int numberOfRolls) {
-    // Your code here
-    return 0.0;
+  public static double computeDeviation(Rollable rollable, 
+  													 int numberOfRolls) {
+    int rolls[] = new int[rollable.sides()];
+	 for(int i = 0; i < numberOfRolls; i++) {
+	 	rollable.roll();
+		rolls[rollable.lastRoll()]++;
+	 }
+	 
+	 double first = rolls[0]/rollable.numberOfRolls();
+	 double min = first;
+	 double max = first;
+	 for (int j = 1; j < rollable.sides(); j++) {
+	 	rolls[j] = rolls[j]/rollable.numberOfRolls();
+		if (rolls[j] > max) {
+			max = rolls[j];
+		} else if (rolls[j] < min) {
+			min = rolls[j];
+		}
+	 }
+    return max - min;
   }
 
 
