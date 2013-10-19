@@ -35,17 +35,17 @@ public class RollableInspector {
    */
   public static double computeDeviation(Rollable rollable, 
   													 int numberOfRolls) {
-    int rolls[] = new int[rollable.sides()];
+    double rolls[] = new double[rollable.sides()];
 	 for(int i = 0; i < numberOfRolls; i++) {
 	 	rollable.roll();
-		rolls[rollable.lastRoll()]++;
+		rolls[rollable.lastRoll() - 1]++;
 	 }
 	 
-	 double first = rolls[0]/rollable.numberOfRolls();
+	 double first = (double) rolls[0]/numberOfRolls;
 	 double min = first;
 	 double max = first;
 	 for (int j = 1; j < rollable.sides(); j++) {
-	 	rolls[j] = rolls[j]/rollable.numberOfRolls();
+	 	rolls[j] = (double) rolls[j]/numberOfRolls;
 		if (rolls[j] > max) {
 			max = rolls[j];
 		} else if (rolls[j] < min) {

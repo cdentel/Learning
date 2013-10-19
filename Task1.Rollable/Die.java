@@ -33,7 +33,7 @@ public class Die implements Rollable {
 	}
 	
 	public int lastRoll() {
-		return lastRoll();
+		return lastRoll;
 	}
 
 }
